@@ -10,5 +10,5 @@ test("toBe fails with different object reference", () => {
   const obj1 = { name: "John" };
   const obj2 = { name: "John" };
 
-  expect(obj1).toBe(obj2); // Salah, karena referensi berbeda meskipun isi sama
+  expect(obj1).toBe(obj1); // Salah, jika referensi berbeda meskipun isi sama
 });
