@@ -1,6 +1,6 @@
 test("toBe example", () => {
   const a = 5;
-  expect(a).toBe(5); // Benar, karena 5 === 5
+  expect(a).toBe(5); // Value sama dengan expected, biasanya digunakan untuk value bukan object
 
   const obj = { name: "John" };
   expect(obj).toBe(obj); // Benar, karena referensi sama
