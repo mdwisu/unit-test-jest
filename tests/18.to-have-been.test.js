@@ -3,6 +3,7 @@ describe("to have been", () => {
     const callback = jest.fn(); // Membuat mock function
     callback(); // Memanggil callback sekali
     callback(); // Memanggil callback sekali lagi
+    expect(callback).toHaveBeenCalled(); // Memastikan callback dipanggil
     expect(callback).toHaveBeenCalledTimes(2); // Memastikan callback dipanggil dua kali
   });
   it("should callback call with parameters", () => {
